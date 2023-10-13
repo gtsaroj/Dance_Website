@@ -1,0 +1,47 @@
+<h1 class="m-2 block rounded-md bg-blue-200 py-3 text-center text-[25px] text-red-500">saroj gt</h1>
+<div class="mx-2 my-2 list-none space-y-1">
+    <li class="rounded-sm px-2 py-3 odd:bg-green-400 even:bg-yellow-400">texas college</li>
+    <li class="rounded-sm px-2 py-3 odd:bg-green-400 even:bg-yellow-400">texas college</li>
+    <li class="rounded-sm px-2 py-3 odd:bg-green-400 even:bg-yellow-400">texas college</li>
+    <li class="rounded-sm px-2 py-3 odd:bg-green-400 even:bg-yellow-400">texas college</li>
+    <li class="rounded-sm px-2 py-3 odd:bg-green-400 even:bg-yellow-400">texas college</li>
+    <li class="rounded-sm px-2 py-3 odd:bg-green-400 even:bg-yellow-400">texas college</li>
+</div>
+
+<form action="">
+    <div class="mx-2 space-y-2 rounded-sm bg-yellow-300 px-3 py-2 dark:bg-red-300">
+        <label for=" Name">Your Name:
+            <input type="text" placeholder="Enter your name"
+                class="flex rounded-sm bg-yellow-100 px-1 py-1 outline-none focus:ring-1" />
+        </label>
+        <label for="">
+            Your Password:
+            <input type="password" class="flex rounded-sm bg-yellow-100 px-1 py-1 outline-none focus:ring-1"
+                placeholder=" Enter your Password" />
+        </label>
+        <label for="">
+            Confirm password:
+            <input type="password" class="flex rounded-sm bg-yellow-100 px-1 py-1 outline-none focus:ring-1"
+                placeholder="confirm your password" />
+        </label>
+    </div>
+    <button id="toogleDark" onclick="document.body.classList.toggle('dark') "
+        class="mx-3 my-1 rounded-sm bg-red-300 p-1 font-mono transition-all hover:bg-black hover:text-white">click
+        Now</button>
+</form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toogleDark = document.getElementById('toggleDark');
+        toogleDark.addEventListener('onclick', function () {
+            if (document.documentElement.classList.includes('dark')) {
+                document.documentElement.classList.remove('dark');
+            }
+            else {
+                document.documentElement.classList.add('dark');
+            }
+        }
+
+        )
+    })
+</script>

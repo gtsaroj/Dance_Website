@@ -1,0 +1,74 @@
+ h1 {
+     text-align: center;
+ }
+
+ .myForm {
+     display: flex;
+     flex-direction: column;
+     width: 50%;
+     justify-content: center;
+     align-items: center;
+     margin: auto;
+
+
+ }
+
+ .myForm .myInput {
+     padding: 8px 25px 4px 25px;
+     margin: 20px 0px 20px 0px;
+     text-align: start;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     width: 27rem;
+     background-color: #222be212;
+     border: none;
+     border-bottom: 1px solid black;
+     outline: none;
+     box-shadow: 1px 2px 4px 2px #139bffb5;
+
+ }
+
+ .button {
+     height: 48px;
+     width: 132px;
+     position: relative;
+     background-color: transparent;
+     cursor: pointer;
+     border: 2px solid #252525;
+     overflow: hidden;
+     border-radius: 7px;
+     color: #333;
+     transition: all 0.5s ease-in-out;
+     margin: 18px 0px 110px 0px;
+     font-size: 24px;
+ }
+
+ .btn-txt {
+     z-index: 1;
+     font-weight: 800;
+     letter-spacing: 4px;
+ }
+
+ .type1::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     transition: all 0.5s ease-in-out;
+     background-color: #333;
+     border-radius: 30px;
+     visibility: hidden;
+     height: 10px;
+     width: 10px;
+     z-index: -1;
+ }
+
+ .button:hover {
+
+     color: #fff;
+     border: none;
+ }
+
+ .type1:hover::after {
+     visibility: visible;
+     transform: scale(100) translateX(2px);
+ }

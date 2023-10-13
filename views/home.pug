@@ -1,0 +1,87 @@
+extends base.pug
+
+block style
+    style
+      include ../static/style.css
+    
+block scripts
+       script(src='../static/services.js')
+       script(src='../static/renderservices.js')
+       
+block content 
+    section#introSection
+            .text 
+                h1  Burn Up The Dance Floor 
+                | Dance Is An Symbolized Interest And Approached Therapeutcally It Can Have Several Certain Health Related Benefits. Dance/Movement Therapy (DMT), 
+                | IS A Type Of Therapy That Uses Movement To Help Individuals Achieve 
+                | Emotional, cognitive, Physical, And Social Integration. Though It falls Under The Terms Of Psychotherapy, It Can Be Beneficial To Physiotherapists 
+                | To Physiotherapists To Treat Movement Disorders Lik Parkinson's.
+                
+                br
+            
+                button 
+                    span Start Journey
+             
+                button
+                    span View Blog
+            .video 
+                video(autoplay='' loop='' muted='' src='../static/videoplayback.webm')
+           
+
+    section#missionSection
+        h2 Our Services
+        .missionService
+            .services
+             .image
+                img(src='../static/bollywood-removebg-preview.png' alt='')
+             .description
+                 h1 Bollywood
+                 p
+                  | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, hitecto doloribus
+                  | nemo officia cumque deserunt voluptas atque debitis!
+
+            .services
+             .image
+                img(src='../static/hollywood-removebg-preview.png' alt='')
+             .description
+                 h1 HollyWood
+                 p
+                  | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, officiis 
+                  |  voluptas atque debitis!
+
+            .services
+              .image
+                img(src='../static/kollywood-removebg-preview.png' alt='')
+              .description
+                 h1 KollyWood
+                 p
+                  | Lorem ipsum dolor sit, amet consectetur adipisicing elit. doloribus
+                  | commodi  nemo officia cumque deserunt voluptas atque debitis!
+
+
+
+        
+
+           
+
+    
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        #sponsors 
+            .sponsordetails 
+                .sponsorImg 
+                    img(src="../static/Amazon_logo.svg.webp", alt="")
+                .sponsorImg 
+                    img(src="../static/ms logo.png", alt="")
+                    
+                .sponsorImg 
+                    img(src="../static/skype logo.png", alt="")
+                    
+        //- img(src="/static/ms logo.png", alt="", Class="spImage")
+        //- img(src="/static/apple logo.png", alt="", Class="spImage")
+        //- img(src="/static/skype logo.png", alt="", Class="spImage")
+
+
+
+    
